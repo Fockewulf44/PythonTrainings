@@ -1,10 +1,8 @@
 def isPowerOfTwo(n: int) -> bool:
         x = 0
-        if n == pow(2, x):
-            return True
-        if n != pow(2, x):
+        while x < n: 
+            if n == pow(2, x):
+                return True
+        else:
             return False
         x += 1
-        breakpoint()
-
-print(isPowerOfTwo(16))

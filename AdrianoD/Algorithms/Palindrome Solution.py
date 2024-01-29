@@ -7,13 +7,13 @@ def isPalindrome(x: int) -> bool:
     s = str(x)
     j = len(s) - 1
     while i < len(s):
-        if i == j:
+        if i == j or i > j:
             return True  
         if s[i] != s[j]:
             return False
         i += 1
         j -= 1
-          
+    return False      
 print(isPalindrome(11))
 
 
