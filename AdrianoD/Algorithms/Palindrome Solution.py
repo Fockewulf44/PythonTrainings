@@ -1,10 +1,9 @@
+# The algorithm passed all testcases except x = 0, it returns None instead of True.  Why is this?
 def isPalindrome(x: int) -> bool:
-    # Why does it return True? It should return false ONLY
-    # if the number is negative
-    if x == abs(x):
-        return True
+    if x != abs(x):
+        return False
 
-    i = 0    
+    i = 0
     s = str(x)
     j = len(s) - 1
 
@@ -13,7 +12,6 @@ def isPalindrome(x: int) -> bool:
             return False
         i += 1
         j -= 1
-    # This IF must be inside While loop
-    # But currently it is not inside
-    if i == j:
-        return True
+        if i == j:
+            return True
+ 
