@@ -1,0 +1,1 @@
+print("Nataly has joined")
