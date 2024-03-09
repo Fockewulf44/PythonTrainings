@@ -1,0 +1,1 @@
+# Hackinscience exercise "Square numbers"
