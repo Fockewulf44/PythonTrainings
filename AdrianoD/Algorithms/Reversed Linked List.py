@@ -37,7 +37,7 @@ class Solution:
             else:
                 return first
 
-    linkedList = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
-    s = Solution
-    result = s.reverseList(s, linkedList)
-    print(result)
+linkedList = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
+s = Solution()
+result = s.reverseList(s, linkedList)
+print(result)

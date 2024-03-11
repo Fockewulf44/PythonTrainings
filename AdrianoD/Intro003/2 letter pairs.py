@@ -7,7 +7,7 @@ for x in j:
             print(x+y)
 
     
-    
+
     
 # print(j)
 # for first in j:
