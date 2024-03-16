@@ -1,0 +1,52 @@
+class Car:
+    make = ""
+    model = ""
+    year = ""
+
+    def __init__(self, make, model, year, country) -> None:
+        self.make = make
+        self.model = model
+        self.year = year
+        self.country = country
+
+    def isForeign(self):
+        if self.country == "US":
+            return False
+        else:
+            return True
+
+    def getYear(self):
+        return self.year
+
+
+hd = Car("Honda", "Accord", "2020", "Japan")
+fd = Car("Ford", "F-150", "2016", "US")
+
+print(hd.isForeign())
+print(fd.isForeign())
+print(fd.getYear())
+
+
+class Phone:
+    passcode = ""
+    profile = ""
+    num = ""
+
+    def __init__(self, passcode, profile, num) -> None:
+        self.passcode = passcode
+        self.profile = profile
+        self.number = num
+
+    def changeNumber(self, number):
+        self.number = number
+
+    def getProfile(self):
+        return self.profile
+
+
+iphone = Phone("12345", "John Appleseed", "295-193-1962")
+
+iphone.changeNumber("194-624-6862")
+
+print(iphone.number)
+print(iphone.getProfile())
