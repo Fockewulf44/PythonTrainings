@@ -19,7 +19,7 @@ class car:
     
     # def openwindows():
 
-bmw = car("bmw", "BMW", "M5CSL", "2024", "30000")
+bmw = car("BMW", "M5CSL", "2024", "30000")
 
 class phone:
     brand=""
