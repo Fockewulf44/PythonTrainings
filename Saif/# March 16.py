@@ -21,6 +21,6 @@ class User:
 
 
 
-john_hopkins = User("CEO", "john1", "john2")
+john_hopkins = User("John Hopkins", "CEO", "john1", "john2")
 
 p = john_hopkins
