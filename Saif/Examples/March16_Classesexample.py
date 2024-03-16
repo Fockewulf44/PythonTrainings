@@ -13,13 +13,16 @@ class car:
         self.year=year
         self.mileage=mileage
     
-    # def moveforward():
+    def moveforward():
+        print("Moving forward")
     
-    # def moveback():
+    def moveback():
+        print("Moving backwards")
     
-    # def openwindows():
+    def openwindows():
+        print("Open Windows")
 
-bmw = car("BMW", "M5CSL", "2024", "30000")
+bmw = car("M5CSL", "2024", "30000")
 
 class phone:
     brand=""
@@ -31,4 +34,4 @@ class phone:
         self.storage=storage
         self.os=os
         
-samsung = phone("Samsung", "S24 Ultra", "512gb", "Android")
+samsung = phone("S24 Ultra", "512gb", "Android")
