@@ -20,3 +20,15 @@ class car:
     def openwindows():
 
 bmw = car("BMW", "M5 CSL", "2024", "30000")
+
+class phone:
+    brand=""
+    storage=""
+    os=""
+    
+    def __init__(self, brand, storage, os) -> None:
+        self.brand=brand
+        self.storage=storage
+        self.os=os
+        
+samsung = phone("Samsung", "S24 Ultra", "512gb", "Android")
