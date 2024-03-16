@@ -29,4 +29,3 @@ def is_anaram(str1: str, str2: str) -> bool:
         ind1 = str2.find(character)
         str2 = str2(0:ind1) + str2(0:ind1+1)
         
-        
