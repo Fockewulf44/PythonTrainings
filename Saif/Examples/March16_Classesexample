@@ -13,10 +13,10 @@ class car:
         self.year=year
         self.mileage=mileage
     
-    def moveforward
+    def moveforward():
     
-    def moveback
+    def moveback():
     
-    def openwindows
+    def openwindows():
 
-bmw = car("M5 CSL", "2024", "30000")
+bmw = car("BMW", "M5 CSL", "2024", "30000")
