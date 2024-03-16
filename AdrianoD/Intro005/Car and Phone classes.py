@@ -1,18 +1,13 @@
 class Car:
 
-
-    def __init__(
-        self, make: str, 
-        model: str, 
-        year: str, country: str, position: float, windows: bool
-        ) -> None:
+    def __init__(self, make: str, model: str, year: str, country: str, position: float) -> None:
         
         self.make = make
         self.model = model
         self.year = year
         self.country = country
         self.position = position
-        self.windows = windows
+        # self.windows = windows
 
     def isForeign(self):
         if self.country == "US":
@@ -28,7 +23,7 @@ class Car:
         self.position -= distance
         return self.position
     
-    def openWindows
+    # def openWindows()
 
 
 hd = Car("Honda", "Accord", "2020", "Japan", 0)
