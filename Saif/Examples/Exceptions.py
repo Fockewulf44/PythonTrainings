@@ -51,3 +51,15 @@
     
 # print("Calculcations are done")
 
+d1 = {1:"San Francisco", 2:"Karachi", 3:"Baku"}
+
+if d1.get(2) == None:
+    raise Exception("There is no key 2")
+else:
+    print(d1[2])
+    
+if d1.get(5) == None:
+    raise Exception("There is no key 5")
+
+else:
+    print(d1[5])
