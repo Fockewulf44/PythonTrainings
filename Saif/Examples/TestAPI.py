@@ -1,0 +1,7 @@
+GET http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/347626?apikey=93dEYuLNl9RGleWNeGdAa5Z6Ch4CfZuT
+
+###
+
+GET http://dataservice.accuweather.com/forecasts/v1/daily/1day/347626?apikey=93dEYuLNl9RGleWNeGdAa5Z6Ch4CfZuT
+
+
