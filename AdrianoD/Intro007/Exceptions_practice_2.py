@@ -20,6 +20,7 @@ print(numFunction(a))
 # Alternate method
 
 list2 = [2,4,6,8,10,12]
+list4 = []
 
 def numFunction2(num):
     list3 = []
@@ -33,7 +34,7 @@ def numFunction2(num):
         return list3
         
 print(numFunction2(list2))
-        
+print(numFunction2(list4))
     
 
 
