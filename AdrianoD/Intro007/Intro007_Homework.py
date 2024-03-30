@@ -87,7 +87,10 @@ class WeatherCondition:
         text = result.text
         j = json.loads(text)
         array_1 = j
-        print(f"The weather for {array_1[-1]['DateTime']} is {array_1[-1]['IconPhrase']} at a temperature of {array_1[-1]['Temperature']['Value']}F. ")
+        print(
+            f"The weather for {array_1[-1]['DateTime']} is {array_1[-1]['IconPhrase']} at a temperature of {array_1[-1]['Temperature']['Value']} F. "
+        )
+
 
 l = WeatherCondition()
 l.FillInHourlyForecast()
