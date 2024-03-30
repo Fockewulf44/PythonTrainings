@@ -12,7 +12,7 @@ try:
     
     # print(list1)
     
-    unique = list(set(list1))
+    unique = sorted(set(list1))
     
     print(unique)
             
