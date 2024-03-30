@@ -5,13 +5,35 @@ a= [5,10,15,20,25]
 
 def numFunction(num):
     newlist = []
-    for i in num:
-        try:
-            newlist.append(num[0])
-            newlist.append(num[-1])
-        except Exception as e:
-            print(f"Error occurred: {e}")
-        finally:
-            return newlist
+    try:
+        newlist.append(num[0])
+        newlist.append(num[-1])
+    except Exception as e:
+        print(f"Error occurred: {e}")
+    finally:
+        return newlist
+    
+    
 
 print(numFunction(a))
+
+# Alternate method
+
+list2 = [2,4,6,8,10,12]
+
+def numFunction2(num):
+    list3 = []
+    try:
+        last_index = num[len(num) - 1]
+        first_index = num[0]
+        list3 = [first_index, last_index]
+    except Exception as e:
+        print(f"Error occurred: {e}")
+    finally:
+        return list3
+        
+print(numFunction2(list2))
+        
+    
+
+
