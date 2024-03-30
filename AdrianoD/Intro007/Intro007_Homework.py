@@ -41,7 +41,7 @@ class HourlyForecast:
     datetime = None
     temperature = 0
     iconphrase = ""
-    
+
     def __init__(self) -> None:
         self.getHourlyForecast()
 
@@ -52,13 +52,12 @@ class HourlyForecast:
         text = result.text
         j = json.loads(text)
         array_1 = j
-        
 
         for i in range(len(array_1)):
             datetime = array_1[i]["DateTime"]
             temperature = array_1[i]["Temperature"]["Value"]
             iconphrase = array_1[i]["IconPhrase"]
-            print(datetime, temperature, iconphrase)
+            print([datetime, temperature, iconphrase])
 
 
 class WeatherCondition:
@@ -70,16 +69,28 @@ class WeatherCondition:
         self.FillInHourlyForecast()
         self.PrintTodaysTemp()
 
-    def FillInHourlyForecast():
+    def FillInHourlyForecast(self):
+        result = requests.get(
+            "https://dataservice.accuweather.com/forecasts/v1/hourly/12hour/347626?apikey=93dEYuLNl9RGleWNeGdAa5Z6Ch4CfZuT"
+        )
+        text = result.text
+        j = json.loads(text)
+        array_1 = j
         hourly_forecast = []
-        for i in range(100):
-            hourly_forecast.append(HourlyForecast())
+        for i in range(len(array_1)):
+            hourly_forecast.append(HourlyForecast.getHourlyForecast(self))
 
-    def PrintTodaysTemp():
-        print()
+    def PrintTodaysTemp(self):
+        result = requests.get(
+            "https://dataservice.accuweather.com/forecasts/v1/hourly/12hour/347626?apikey=93dEYuLNl9RGleWNeGdAa5Z6Ch4CfZuT"
+        )
+        text = result.text
+        j = json.loads(text)
+        array_1 = j
+        print(f"The weather for {array_1[-1]['DateTime']} is {array_1[-1]['IconPhrase']} at a temperature of {array_1[-1]['Temperature']['Value']}F. ")
 
+l = WeatherCondition()
+l.FillInHourlyForecast()
 
-p = DailyForecast()
-p= HourlyForecast()
-p.getHourlyForecast
+l.PrintTodaysTemp()
 v = 100
