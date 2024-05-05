@@ -3,7 +3,7 @@ x = 10000
 print(m.sqrt(x))
 
 
-problem = 5000 * 3
+problem = 5000 * 6
 print (problem)
 
 value = input("What is your first name?: ")
