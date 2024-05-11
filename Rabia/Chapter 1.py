@@ -26,8 +26,8 @@ x1 * 5
 
 #Input - this was a litte confusing. Skipping for now.
 
-name = input("What is your name? ")
-print("Hello, " + name + "!")
+# name = input("What is your name? ")
+# print("Hello, " + name + "!")
 
 #Functions - examples
 
@@ -39,5 +39,8 @@ abs(-20)     #gives absolute value
 
 sqrt(25)     #square root function
 
-#Continue at Strings section in Chapter 1
+#Strings
 
+x = "My name is: "
+y = "Rabia"
+print(x+y)
