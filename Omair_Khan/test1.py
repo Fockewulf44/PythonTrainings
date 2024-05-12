@@ -1,21 +1,15 @@
-import math as m
-x = 10000
-print(m.sqrt(x))
+hello = ["January", "March", "February", "November", "June", "July"]
+hello.sort()
+print(hello)
 
+team = [1,8,4,5,3,2,1]
+team.insert(4, "twenty one")
+print(team)
 
-problem = 5000 * 6
-print (problem)
-
-value = input("What is your first name?: ")
-print ("Congrats on completing your first coding homework " + value + "!")
-
-test = 9//3
-print (test)
-
-print (abs(-10))
-
-print (round(97/7))
-
+a = [100, 200, 300, 400, 500]
+first = a[0]
+last = a[4]
+print(first, last)
 
 
 
